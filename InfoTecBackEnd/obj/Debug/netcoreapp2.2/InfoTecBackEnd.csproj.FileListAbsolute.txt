@@ -1,0 +1,14 @@
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.deps.json
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.json
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.dev.json
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.dll
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csprojAssemblyReference.cache
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csproj.CoreCompileInputs.cache
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorAssemblyInfo.cache
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorAssemblyInfo.cs
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.AssemblyInfoInputs.cache
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.AssemblyInfo.cs
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorTargetAssemblyInfo.cache
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.dll
+D:\school\Documentacion\back2\InfoTecBackEnd\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
