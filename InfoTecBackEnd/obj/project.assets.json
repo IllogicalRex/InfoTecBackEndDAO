@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\school\\Documentacion\\back2\\InfoTecBackEnd\\InfoTecBackEnd\\InfoTecBackEnd.csproj",
+      "projectUniqueName": "D:\\school\\Documentacion\\back2\\InfoTecBackEndDAO\\InfoTecBackEnd\\InfoTecBackEnd.csproj",
       "projectName": "InfoTecBackEnd",
-      "projectPath": "D:\\school\\Documentacion\\back2\\InfoTecBackEnd\\InfoTecBackEnd\\InfoTecBackEnd.csproj",
+      "projectPath": "D:\\school\\Documentacion\\back2\\InfoTecBackEndDAO\\InfoTecBackEnd\\InfoTecBackEnd.csproj",
       "packagesPath": "C:\\Users\\e-javelazquez\\.nuget\\packages\\",
-      "outputPath": "D:\\school\\Documentacion\\back2\\InfoTecBackEnd\\InfoTecBackEnd\\obj\\",
+      "outputPath": "D:\\school\\Documentacion\\back2\\InfoTecBackEndDAO\\InfoTecBackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -9,8 +9,8 @@ namespace InfoTecBackEnd.Interfaces
     public interface IProjectBank
     {
         List<ProjectBankModel> GetAllProjects();
-        ProjectBankModel GetProjects(int id);
-        ProjectBankModel DeleteProject(int project);
-        ProjectBankModel UpdateProject(ProjectBankModel order);
+        ProjectBankModel GetProjectsById(int id);
+        string DeleteProject(int project);
+        ProjectBankModel UpdateProject(int id, ProjectBankModel order);
     }
 }

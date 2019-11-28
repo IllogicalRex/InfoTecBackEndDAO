@@ -22,27 +22,30 @@ namespace InfoTecBackEnd.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ProjectBankModel Get(int id)
         {
-            return "value";
+            return pbDao.GetProjectsById(id);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public string Post([FromBody] ProjectBankModel project)
         {
+            return pbDao.CreateProject(project);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ProjectBankModel Put(int id, [FromBody] ProjectBankModel value)
         {
+            return pbDao.UpdateProject(id, value);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public string Delete(int id)
         {
+            return pbDao.DeleteProject(id);
         }
     }
 }
