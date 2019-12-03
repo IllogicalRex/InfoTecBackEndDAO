@@ -10,7 +10,6 @@ namespace InfoTecBackEnd.DAO
 {
     public class ProjectBankDAO : IProjectBank
     {
-
         SqlConnection conn = new SqlConnection(ConnectionString.connectionString);
 
         public string DeleteProject(int projectid)
