@@ -31,13 +31,11 @@ namespace InfoTecBackEnd
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowOrigin",
-                builder =>
-                {
-                    builder.WithOrigins("*")
-                     .WithHeaders("Origin, X-Requested-With, Content-Type, Accept")
-                      .WithMethods("*")
-                       .AllowCredentials();
-                });
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    );
             });
             services.AddAuthentication(opt => {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

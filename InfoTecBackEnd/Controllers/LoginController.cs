@@ -1,4 +1,5 @@
-﻿using InfoTecBackEnd.Model;
+﻿using InfoTecBackEnd.DAO;
+using InfoTecBackEnd.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -15,6 +16,7 @@ namespace InfoTecBackEnd.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        LoginDAO login = new LoginDAO();
         // GET api/values
         [HttpPost, Route("auth")]
         public IActionResult Login([FromBody]LoginModel user)
@@ -23,8 +25,8 @@ namespace InfoTecBackEnd.Controllers
             {
                 return BadRequest("Invalid client request");
             }
-
-            if (user.UserName == "johndoe" && user.Password == "def@123")
+            LoginModel loginResponse = login.GetUser(user);
+            if (user.userName == loginResponse.userName && user.password == loginResponse.password)
             {
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);

@@ -1,6 +1,7 @@
 ﻿using InfoTecBackEnd.DAO;
 using InfoTecBackEnd.Model;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,10 @@ namespace InfoTecBackEnd.Controllers
         ProjectBankDAO pbDao = new ProjectBankDAO();
         // GET api/values
         [HttpGet]
+        [EnableCors("AllowOrigin")]
         [Authorize]
         public List<ProjectBankModel> Get()
+
         {
             return pbDao.GetAllProjects();
         }

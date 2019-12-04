@@ -25,7 +25,6 @@ D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcore
 D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorTargetAssemblyInfo.cache
 D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.dll
 D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
-D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csprojAssemblyReference.cache
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.deps.json
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.json
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.dev.json

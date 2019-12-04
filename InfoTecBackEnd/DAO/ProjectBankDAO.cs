@@ -45,7 +45,7 @@ namespace InfoTecBackEnd.DAO
                 project.nombre_proy = dr.GetString(dr.GetOrdinal("nombre_proy"));
                 project.nombre_emp = dr.GetString(dr.GetOrdinal("nombre_emp"));
                 project.nombre_cont = dr.GetString(dr.GetOrdinal("nombre_cont"));
-                project.tel_empre = dr.GetInt32(dr.GetOrdinal("tel_empre"));
+                project.tel_empre = dr.GetString(dr.GetOrdinal("tel_empre"));
                 project.correo_empre = dr.GetString(dr.GetOrdinal("correo_empre"));
                 project.num_vacantes = dr.GetInt32(dr.GetOrdinal("num_vacantes"));
                 project.direccion_empre = dr.GetString(dr.GetOrdinal("direccion_empre"));
@@ -92,7 +92,7 @@ namespace InfoTecBackEnd.DAO
                 project.nombre_proy = dr.GetString(dr.GetOrdinal("nombre_proy"));
                 project.nombre_emp = dr.GetString(dr.GetOrdinal("nombre_emp"));
                 project.nombre_cont = dr.GetString(dr.GetOrdinal("nombre_cont"));
-                project.tel_empre = dr.GetInt32(dr.GetOrdinal("tel_empre"));
+                project.tel_empre = dr.GetString(dr.GetOrdinal("tel_empre"));
                 project.correo_empre = dr.GetString(dr.GetOrdinal("correo_empre"));
                 project.num_vacantes = dr.GetInt32(dr.GetOrdinal("num_vacantes"));
                 project.direccion_empre = dr.GetString(dr.GetOrdinal("direccion_empre"));
@@ -128,7 +128,7 @@ namespace InfoTecBackEnd.DAO
                 project.nombre_proy = dr.GetString(dr.GetOrdinal("nombre_proy"));
                 project.nombre_emp = dr.GetString(dr.GetOrdinal("nombre_emp"));
                 project.nombre_cont = dr.GetString(dr.GetOrdinal("nombre_cont"));
-                project.tel_empre = dr.GetInt32(dr.GetOrdinal("tel_empre"));
+                project.tel_empre = dr.GetString(dr.GetOrdinal("tel_empre"));
                 project.correo_empre = dr.GetString(dr.GetOrdinal("correo_empre"));
                 project.num_vacantes = dr.GetInt32(dr.GetOrdinal("num_vacantes"));
                 project.direccion_empre = dr.GetString(dr.GetOrdinal("direccion_empre"));
