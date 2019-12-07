@@ -49,6 +49,7 @@ namespace InfoTecBackEnd.DAO
                 project.correo_empre = dr.GetString(dr.GetOrdinal("correo_empre"));
                 project.num_vacantes = dr.GetInt32(dr.GetOrdinal("num_vacantes"));
                 project.direccion_empre = dr.GetString(dr.GetOrdinal("direccion_empre"));
+                project.carrera = dr.GetString(dr.GetOrdinal("carrera"));
                 Projects.Add(project);
             }
             conn.Close();
@@ -136,5 +137,32 @@ namespace InfoTecBackEnd.DAO
             conn.Close();
             return project;
         }
+
+        public ProjectModel ProjectSubscription(ProjectModel project)
+        {
+            SqlCommand cmd = new SqlCommand("ProjectSubscription", conn);
+            cmd.CommandTimeout = 0;
+            cmd.Parameters.AddWithValue("IdBproy", project.IdBproy);
+            cmd.Parameters.AddWithValue("nombre_proy", project.nombre_proy);
+            cmd.Parameters.AddWithValue("descripcion_proy", project.descripcion_proy);
+            cmd.Parameters.AddWithValue("NoControl", project.NoControl);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            ProjectModel proj = null;
+
+            while (dr.Read())
+            {
+                proj = new ProjectModel();
+                proj.IdBproy = dr.GetInt32(dr.GetOrdinal("idProyecto"));
+                proj.nombre_proy = dr.GetString(dr.GetOrdinal("NombreProyecto"));
+                proj.descripcion_proy = dr.GetString(dr.GetOrdinal("Descripcion_proy"));
+                proj.NoControl = dr.GetString(dr.GetOrdinal("AlumnoId"));
+               
+            }
+            conn.Close();
+            return proj;
+        }
+
     }
 }

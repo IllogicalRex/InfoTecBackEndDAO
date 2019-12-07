@@ -39,3 +39,4 @@ C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debu
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorTargetAssemblyInfo.cache
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.dll
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
+D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csprojAssemblyReference.cache

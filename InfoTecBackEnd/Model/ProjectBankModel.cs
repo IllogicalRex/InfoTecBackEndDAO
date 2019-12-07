@@ -16,5 +16,10 @@ namespace InfoTecBackEnd.Model
         public string correo_empre { get; set; }
         public int num_vacantes { get; set; }
         public string direccion_empre { get; set; }
+        public string carrera { get; set; }
+        public string NoControl { get; set; }
+
+
+
     }
 }
