@@ -70,7 +70,7 @@ namespace InfoTecBackEnd.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString });
+                return Ok(new { Token = tokenString, user = "asesor", userName = user.userName });
             }
             else
             {
@@ -100,7 +100,7 @@ namespace InfoTecBackEnd.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString });
+                return Ok(new { Token = tokenString, user = "encargado", userName = user.userName });
             }
             else
             {
