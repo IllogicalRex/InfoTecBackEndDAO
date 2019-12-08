@@ -20,24 +20,24 @@ namespace InfoTecBackEnd.DAO
             conn.Open();
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             conn.Close();
-            return "Projecto eliminado";
+            return "Empresa eliminada";
 
         }
 
         public string postEmpresa(EmpresaModel empresa) 
         {
-            SqlCommand cmd = new SqlCommand("Create_ProjectBank", conn);
+            SqlCommand cmd = new SqlCommand("postEmpresa", conn);
             cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("nombre", empresa.nombre);
             cmd.Parameters.AddWithValue("direccion", empresa.direccion);
             cmd.Parameters.AddWithValue("correo_electronico",empresa.correo_electronico);
             cmd.Parameters.AddWithValue("telefono",empresa.telefono);
-            cmd.Parameters.AddWithValue("1",empresa.Idrol);
+            cmd.Parameters.AddWithValue("idrol",1);
             cmd.CommandType = CommandType.StoredProcedure;
             conn.Open();
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             conn.Close();
-            return "Se creo el proyecto correctamente";
+            return "Se creo la empresa correctamente";
         }
         public List<EmpresaModel> getAllEmpresas()
         {
@@ -56,7 +56,7 @@ namespace InfoTecBackEnd.DAO
                 empresa.nombre = dr.GetString(dr.GetOrdinal("nombre"));
                 empresa.direccion = dr.GetString(dr.GetOrdinal("direccion"));
                 empresa.correo_electronico = dr.GetString(dr.GetOrdinal("correo_electronico"));
-                empresa.telefono = dr.GetInt32(dr.GetOrdinal("telefono"));
+                empresa.telefono = dr.GetString(dr.GetOrdinal("telefono"));
 
                 
                 empresas.Add(empresa);

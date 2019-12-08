@@ -20,7 +20,7 @@ namespace InfoTecBackEnd.Controllers
             return empresadao.getAllEmpresas();
 
         }        
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public String deleteEmpresa(int id)
         {
            return empresadao.deleteEmpresa(id);     
