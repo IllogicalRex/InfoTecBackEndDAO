@@ -44,7 +44,34 @@ namespace InfoTecBackEnd.DAO
             return "Se creo el Document correctamente";
         }
 
-        
+        public DocumentModel getDocumento(string id)
+        {
+            SqlCommand cmd = new SqlCommand("getDocumento", conn);
+            cmd.CommandTimeout = 0;
+            cmd.Parameters.AddWithValue("@AlumnoNumControl", id);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            DocumentModel documento = null;
+
+            while (dr.Read())
+            {
+                documento = new DocumentModel();
+                documento.AlumnId = dr.GetString(dr.GetOrdinal("AlumnoId"));
+                documento.Idtipo = dr.GetInt32(dr.GetOrdinal("Idtipo"));
+                documento.url = dr.GetString(dr.GetOrdinal("url"));
+                documento.fecha = dr.GetDateTime(dr.GetOrdinal("fecha"));
+                documento.ComentarioAsesor = dr.GetString(dr.GetOrdinal("ComentarioAsesor"));
+                documento.idEstatus = dr.GetInt32(dr.GetOrdinal("idEstatus"));
+                documento.ComentarioAdmRes = dr.GetString(dr.GetOrdinal("ComentarioAdmRes"));
+                documento.Idasesor = dr.GetString(dr.GetOrdinal("Idasesor"));
+                documento.idadmin = dr.GetString(dr.GetOrdinal("idadmin"));
+
+            }
+            conn.Close();
+
+            return documento;
+        }
 
     }
 }

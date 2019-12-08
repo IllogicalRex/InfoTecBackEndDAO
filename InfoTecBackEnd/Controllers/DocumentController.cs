@@ -24,5 +24,12 @@ namespace InfoTecBackEnd.Controllers
             return docDao.CreateDocument(document);
         }
 
+        [HttpGet("{id}")]
+        public DocumentModel getAlumno(string id)
+        {
+            return docDao.getDocumento(id);
+
+        }
+
     }
 }
