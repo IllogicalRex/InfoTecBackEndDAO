@@ -10,7 +10,7 @@ namespace InfoTecBackEnd.Model
         public string nombre {get; set;}
         public string direccion {get; set;}
         public string correo_electronico {get; set;}
-        public int telefono {get; set;}
+        public string telefono {get; set;}
         public int Idrol {get; set;}
     }
 }
