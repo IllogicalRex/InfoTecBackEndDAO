@@ -40,3 +40,17 @@ C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debu
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.dll
 C:\Users\e-jjmartinezt\Desktop\InfoTec\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
 D:\school\Documentacion\back2\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csprojAssemblyReference.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.deps.json
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.json
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.runtimeconfig.dev.json
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.dll
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\bin\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csprojAssemblyReference.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.csproj.CoreCompileInputs.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorAssemblyInfo.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorAssemblyInfo.cs
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.AssemblyInfoInputs.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.AssemblyInfo.cs
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.RazorTargetAssemblyInfo.cache
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.dll
+C:\Users\Huemac\Desktop\InfoTecBackEndDAO\InfoTecBackEnd\obj\Debug\netcoreapp2.2\InfoTecBackEnd.pdb
