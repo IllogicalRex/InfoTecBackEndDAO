@@ -30,6 +30,7 @@ namespace InfoTecBackEnd.Controllers
             List<string> blobs = new List<string>();
             try
             {
+
                 if (CloudStorageAccount.TryParse(config.Value.StorageConnection, out CloudStorageAccount storageAccount))
                 {
                     CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
@@ -57,7 +58,7 @@ namespace InfoTecBackEnd.Controllers
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
             }
             return blobs;
@@ -83,9 +84,9 @@ namespace InfoTecBackEnd.Controllers
                 else
                 {
                     return false;
-                }
+                } 
             }
-            catch
+            catch (Exception ex)
             {
                 return false;
             }
