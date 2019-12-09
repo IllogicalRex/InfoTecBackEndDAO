@@ -1,6 +1,6 @@
 using InfoTecBackEnd.Heltper;
 using InfoTecBackEnd.Model;
-using InfoTecBackEnd.interfaces;
+using InfoTecBackEnd.Interfaces;
 using System.Data.SqlClient;
 using System.Data;
 

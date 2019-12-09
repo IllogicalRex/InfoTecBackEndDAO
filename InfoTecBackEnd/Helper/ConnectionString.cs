@@ -7,6 +7,6 @@ namespace InfoTecBackEnd.Heltper
 {
     public static class ConnectionString
     {
-        public static string connectionString = "Server=e-javelazquez;Database=InfoTecDataBase;Trusted_Connection=True;";
+        public static string connectionString = "Server=LA-PC-RA\\HUEMAC;Database=InfoTecDatabase;Trusted_Connection=True;";
     }
 }
