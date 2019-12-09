@@ -58,12 +58,9 @@ namespace InfoTecBackEnd.Controllers
         }
 
         [HttpPost, Route("subscribir")]
-        [Authorize]
-        public ProjectModel ProjectSubscription([FromBody] ProjectModel project)
+        public bool ProjectSubscription([FromBody] ProjectModel project)
         {
             return pbDao.ProjectSubscription(project);
         }
-
-
     }
 }

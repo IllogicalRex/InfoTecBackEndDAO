@@ -1,7 +1,6 @@
 using InfoTecBackEnd.Model;
-using System.Collections.Generic;
 
-namespace InfoTecBackEnd.interfaces
+namespace InfoTecBackEnd.Interfaces
 {
     public interface IAlumno
     {
