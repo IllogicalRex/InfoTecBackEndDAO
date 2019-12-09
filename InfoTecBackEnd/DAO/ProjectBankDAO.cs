@@ -138,30 +138,35 @@ namespace InfoTecBackEnd.DAO
             return project;
         }
 
-        public ProjectModel ProjectSubscription(ProjectModel project)
+        public bool ProjectSubscription(ProjectModel project)
         {
-            SqlCommand cmd = new SqlCommand("ProjectSubscription", conn);
-            cmd.CommandTimeout = 0;
-            cmd.Parameters.AddWithValue("IdBproy", project.IdBproy);
-            cmd.Parameters.AddWithValue("nombre_proy", project.nombre_proy);
-            cmd.Parameters.AddWithValue("descripcion_proy", project.descripcion_proy);
-            cmd.Parameters.AddWithValue("NoControl", project.NoControl);
-            cmd.CommandType = CommandType.StoredProcedure;
-            conn.Open();
-            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            ProjectModel proj = null;
-
-            while (dr.Read())
+            ValidarDAO validarDAO = new ValidarDAO();
+            bool valida = validarDAO.Valida(project, conn);
+            if (valida)
             {
-                proj = new ProjectModel();
-                proj.IdBproy = dr.GetInt32(dr.GetOrdinal("idProyecto"));
-                proj.nombre_proy = dr.GetString(dr.GetOrdinal("NombreProyecto"));
-                proj.descripcion_proy = dr.GetString(dr.GetOrdinal("Descripcion_proy"));
-                proj.NoControl = dr.GetString(dr.GetOrdinal("AlumnoId"));
-               
+                SqlCommand cmd = new SqlCommand("ProjectSubscription", conn);
+                cmd.CommandTimeout = 0;
+                cmd.Parameters.AddWithValue("IdBproy", project.IdBproy);
+                cmd.Parameters.AddWithValue("nombre_proy", project.nombre_proy);
+                cmd.Parameters.AddWithValue("descripcion_proy", project.descripcion_proy);
+                cmd.Parameters.AddWithValue("NoControl", project.NoControl);
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                ProjectModel proj = null;
+
+                while (dr.Read())
+                {
+                    proj = new ProjectModel();
+                    proj.IdBproy = dr.GetInt32(dr.GetOrdinal("idProyecto"));
+                    proj.nombre_proy = dr.GetString(dr.GetOrdinal("NombreProyecto"));
+                    proj.descripcion_proy = dr.GetString(dr.GetOrdinal("Descripcion_proy"));
+                    proj.NoControl = dr.GetString(dr.GetOrdinal("AlumnoId"));
+
+                }
+                conn.Close();
             }
-            conn.Close();
-            return proj;
+            return valida;
         }
 
     }
