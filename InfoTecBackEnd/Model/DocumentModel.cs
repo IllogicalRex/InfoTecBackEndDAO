@@ -11,7 +11,7 @@ namespace InfoTecBackEnd.Model
         public string ComentarioAsesor { get; set; }
         public int idEstatus { get; set; }
         public string ComentarioAdmRes { get; set; }
-        public int Idasesor { get; set; }
-        public int idadmin { get; set; }
+        public string Idasesor { get; set; }
+        public string idadmin { get; set; }
     }
 }
