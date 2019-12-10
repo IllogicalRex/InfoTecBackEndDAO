@@ -40,7 +40,7 @@ namespace InfoTecBackEnd.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString, user = "alumno", userName = user.userName });
+                return Ok(new { Token = tokenString, user = "Alumno", userName = user.userName });
             }
             else
             {
@@ -105,7 +105,7 @@ namespace InfoTecBackEnd.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString, user = "asesor", userName = user.userName });
+                return Ok(new { Token = tokenString, user = "Asesor", userName = user.userName });
             }
             else
             {
@@ -135,7 +135,7 @@ namespace InfoTecBackEnd.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString, user = "encargado", userName = user.userName });
+                return Ok(new { Token = tokenString, user = "Encargado de residencias", userName = user.userName });
             }
             else
             {
