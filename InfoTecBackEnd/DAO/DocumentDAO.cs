@@ -99,6 +99,43 @@ namespace InfoTecBackEnd.DAO
             SqlCommand cmd = new SqlCommand("getDocumentoAlumnoAsesor", conn);
             cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@AsesorId", id);
+            cmd.Parameters.AddWithValue("@repor1", 3);
+            cmd.Parameters.AddWithValue("@repor2", 4);
+            cmd.Parameters.AddWithValue("@repor3", 5);
+            cmd.Parameters.AddWithValue("@reporFinal", 7);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            DocumentModel documento = null;
+
+            while (dr.Read())
+            {
+                documento = new DocumentModel();
+                documento.AlumnId = dr.GetString(dr.GetOrdinal("AlumnoId"));
+                documento.Idtipo = dr.GetInt32(dr.GetOrdinal("Idtipo"));
+                documento.url = dr.GetString(dr.GetOrdinal("url"));
+                documento.fecha = dr.GetDateTime(dr.GetOrdinal("fecha"));
+                documento.ComentarioAsesor = dr.GetString(dr.GetOrdinal("ComentarioAsesor"));
+                documento.idEstatus = dr.GetInt32(dr.GetOrdinal("idEstatus"));
+                documento.ComentarioAdmRes = dr.GetString(dr.GetOrdinal("ComentarioAdmRes"));
+                documento.Idasesor = dr.GetString(dr.GetOrdinal("Idasesor"));
+                documento.idadmin = dr.GetString(dr.GetOrdinal("idadmin"));
+                documents.Add(documento);
+            }
+            conn.Close();
+
+            return documents;
+        }
+        public List<DocumentModel> getDocumentoEncargado(string id)
+        {
+            List<DocumentModel> documents = new List<DocumentModel>();
+            SqlCommand cmd = new SqlCommand("getDocumentoEncargado", conn);
+            cmd.CommandTimeout = 0;
+            cmd.Parameters.AddWithValue("@EncargadoId", id);
+            cmd.Parameters.AddWithValue("@tipoAcept", 1);
+            cmd.Parameters.AddWithValue("@tipoAnte", 2);
+            cmd.Parameters.AddWithValue("@tipoSegui", 6);
+            cmd.Parameters.AddWithValue("@tipoReport", 7);
             cmd.CommandType = CommandType.StoredProcedure;
             conn.Open();
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);

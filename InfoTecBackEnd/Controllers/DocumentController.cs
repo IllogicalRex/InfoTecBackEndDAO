@@ -41,6 +41,12 @@ namespace InfoTecBackEnd.Controllers
             return docDao.getDocumentoAlumnoAsesor(id);
 
         }
+        [HttpGet("encargado/{id}")]
+        public List<DocumentModel> getDocumentoEncargado(string id)
+        {
+            return docDao.getDocumentoEncargado(id);
+
+        }
 
     }
 }
