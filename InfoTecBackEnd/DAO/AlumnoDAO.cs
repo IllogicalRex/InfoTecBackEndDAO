@@ -38,7 +38,7 @@ namespace InfoTecBackEnd.DAO
                 alumno.periodo_ingreso = dr.GetString(dr.GetOrdinal("periodo_ingreso"));
                 alumno.periodo_convalidado = dr.GetInt32(dr.GetOrdinal("periodo_convalidado"));
                 alumno.periodo_actual_ultimo = dr.GetString(dr.GetOrdinal("periodo_actual_ultimo"));
-                alumno.tutor = dr.GetString(dr.GetOrdinal("tutor"));
+                alumno.tutor = dr.GetString(dr.GetOrdinal("asesor"));
                 alumno.curp = dr.GetString(dr.GetOrdinal("curp"));
                 alumno.fecha_naci = dr.GetDateTime(dr.GetOrdinal("fecha_naci"));
                 alumno.direccion = dr.GetString(dr.GetOrdinal("direccion"));

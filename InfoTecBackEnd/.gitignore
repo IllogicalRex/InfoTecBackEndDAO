@@ -25,15 +25,35 @@ speed-measure-plugin.json
 .settings/
 *.sublime-workspace
 
+
+
 # IDE - VSCode
 .vscode/*
-.vs/*
+./.vs/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
-/bin
+
+# IDE - Visual Studio
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/Debug
+obj/Debug 
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp
 
 # misc
 /.sass-cache
