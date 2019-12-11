@@ -1,5 +1,7 @@
 using InfoTecBackEnd.DAO;
 using InfoTecBackEnd.Model;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfoTecBackEnd.Controllers
@@ -11,6 +13,8 @@ namespace InfoTecBackEnd.Controllers
     {
         AsesorDAO asesorDAO = new AsesorDAO();
         [HttpGet("{id}")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public AsesorModel getAsesor(string id)
         {
             return asesorDAO.getAsesor(id);

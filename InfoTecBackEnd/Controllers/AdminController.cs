@@ -1,5 +1,7 @@
 using InfoTecBackEnd.DAO;
 using InfoTecBackEnd.Model;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfoTecBackEnd.Controllers
@@ -10,6 +12,8 @@ namespace InfoTecBackEnd.Controllers
     {
         AdminDAO adminDao = new AdminDAO();
         [HttpGet("{id}")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public AdminModel GetAdminInfo(string id)
         {
             return adminDao.GetAdminInfo(id);

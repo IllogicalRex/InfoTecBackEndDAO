@@ -27,6 +27,7 @@ namespace InfoTecBackEnd.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [EnableCors("AllowOrigin")]
         [Authorize]
         public ProjectBankModel Get(int id)
         {
@@ -35,6 +36,7 @@ namespace InfoTecBackEnd.Controllers
 
         // POST api/values
         [HttpPost]
+        [EnableCors("AllowOrigin")]
         [Authorize]
         public string Post([FromBody] ProjectBankModel project)
         {
@@ -43,6 +45,7 @@ namespace InfoTecBackEnd.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
+        [EnableCors("AllowOrigin")]
         [Authorize]
         public ProjectBankModel Put(int id, [FromBody] ProjectBankModel value)
         {
@@ -51,6 +54,7 @@ namespace InfoTecBackEnd.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [EnableCors("AllowOrigin")]
         [Authorize]
         public string Delete(int id)
         {
@@ -58,6 +62,8 @@ namespace InfoTecBackEnd.Controllers
         }
 
         [HttpPost, Route("subscribir")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public bool ProjectSubscription([FromBody] ProjectModel project)
         {
             return pbDao.ProjectSubscription(project);

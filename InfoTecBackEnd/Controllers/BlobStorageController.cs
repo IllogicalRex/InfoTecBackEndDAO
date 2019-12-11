@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using InfoTecBackEnd.BlobStorage;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -25,6 +27,8 @@ namespace InfoTecBackEnd.Controllers
         }
 
         [HttpGet("ListFiles")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public async Task<List<string>> ListFiles()
         {
             List<string> blobs = new List<string>();
@@ -65,6 +69,8 @@ namespace InfoTecBackEnd.Controllers
         }
 
         [HttpPost("InsertFile")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public async Task<bool> InsertFile(IFormFile asset)
         {
             try
@@ -93,6 +99,8 @@ namespace InfoTecBackEnd.Controllers
         }
 
         [HttpGet("DownloadFile/{fileName}")]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public async Task<IActionResult> DownloadFile(string fileName)
         {
             MemoryStream ms = new MemoryStream();
@@ -130,6 +138,8 @@ namespace InfoTecBackEnd.Controllers
 
         [Route("DeleteFile/{fileName}")]
         [HttpGet]
+        [EnableCors("AllowOrigin")]
+        [Authorize]
         public async Task<bool> DeleteFile(string fileName)
         {
             try
